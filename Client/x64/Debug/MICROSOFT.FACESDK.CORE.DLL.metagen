@@ -1,0 +1,2235 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Microsoft.FaceSdk.Core, Version=1.1.0.0, Culture=neutral, PublicKeyToken=48837281b498681c: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly PresentationFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class Microsoft.FaceSdk.Common.ResourceHelper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Properties:
+    System.String RootPath 'get set' : 
+  Methods:
+    GetAbsolutePath(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OpenStream(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_RootPath(): PrivateScope, Public, HideBySig, SpecialName
+    Create(ResourceType): PrivateScope, Public, Static, HideBySig
+    Create(String, ResourceType): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Common.ApplicationResourceHelper: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.ResourceHelper
+  Methods:
+    GetAbsolutePath(String): PrivateScope, Public, Virtual, HideBySig
+    OpenStream(String): PrivateScope, Public, Virtual, HideBySig
+    GetResourceRootInAssembly(String): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Common.Array`1[T]: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  Type parameter: T,  DefaultConstructor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(T[], Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IList`1[T], Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IList`1[T], System.Collections.Generic.IEnumerable`1[System.Int32]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IList`1[T]
+    System.Collections.Generic.ICollection`1[T]
+    System.Collections.Generic.IEnumerable`1[T]
+    System.Collections.IEnumerable
+  Properties:
+    System.Object SyncRoot 'get ' : 
+    T[] Items  'get ' : 
+    Int32 Length 'get ' : 
+    Boolean IsReadOnly 'get ' : 
+    Int32 Count 'get ' : 
+    T Item [Int32] 'get set' : 
+  Methods:
+    Resize(Int32): PrivateScope, Public, HideBySig
+    Fill(T): PrivateScope, Public, HideBySig
+    AddRange(IEnumerable`1): PrivateScope, Public, HideBySig
+    Copy(IList`1): PrivateScope, Public, HideBySig
+    Copy(Int32, IList`1, Int32, Int32): PrivateScope, Public, HideBySig
+    Clone(): PrivateScope, Public, HideBySig
+    Zero(): PrivateScope, Public, HideBySig
+    get_SyncRoot(): PrivateScope, Public, HideBySig, SpecialName
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_IsReadOnly(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CopyTo(T[], Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(T): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Clear(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(T): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Remove(T): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Item(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Item(Int32, T): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IndexOf(T): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Insert(Int32, T): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    RemoveAt(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Common.ByteStreamReader: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.IO.BinaryReader
+    Void .ctor(Byte[]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.Ptr`1[System.Byte]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.FaceSdk.Common.Ptr`1[System.Byte] Current 'get ' : 
+  Methods:
+    Create(Stream): PrivateScope, Public, Static, HideBySig
+    Advance(Int64): PrivateScope, Public, HideBySig
+    SyncBuffer(Int32): PrivateScope, Public, HideBySig
+    get_Current(): PrivateScope, Public, HideBySig, SpecialName
+    ReadAlignedDouble(): PrivateScope, Public, HideBySig
+    ReadAlignedInt16(): PrivateScope, Public, HideBySig
+    ReadAlignedInt32(): PrivateScope, Public, HideBySig
+    ReadAlignedInt64(): PrivateScope, Public, HideBySig
+    ReadAlignedSingle(): PrivateScope, Public, HideBySig
+    ReadAlignedUInt16(): PrivateScope, Public, HideBySig
+    ReadAlignedUInt32(): PrivateScope, Public, HideBySig
+    ReadAlignedUInt64(): PrivateScope, Public, HideBySig
+Class Microsoft.FaceSdk.Common.DisposeModel: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Interfaces:
+    System.IDisposable
+  Methods:
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Common.CompactStreamBase: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.DisposeModel
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single MinValue 'get set' : 
+    Single MaxValue 'get set' : 
+  Methods:
+    Depack(Int16): PrivateScope, Public, HideBySig
+    Pack(Single): PrivateScope, Public, HideBySig
+    get_MinValue(): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxValue(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Common.CompactStreamReader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.CompactStreamBase
+    Void .ctor(System.IO.BinaryReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    ReadSingle(): PrivateScope, Public, HideBySig
+Class Microsoft.FaceSdk.Common.CompactStreamWriter: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.CompactStreamBase
+    Void .ctor(System.IO.BinaryWriter, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Write(Single): PrivateScope, Public, HideBySig
+Struct Microsoft.FaceSdk.Common.Complex: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Double, Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.Complex): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Double): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Common.Complex]
+    System.IComparable`1[Microsoft.FaceSdk.Common.Complex]
+  Properties:
+    Double Real 'get set' : 
+    Double Imaginary 'get set' : 
+    Boolean IsReal 'get ' : 
+    Boolean IsImaginary 'get ' : 
+    Boolean IsZero 'get ' : 
+  Methods:
+    GetPolarExpression(Double&(Out), Double&(Out)): PrivateScope, Public, HideBySig
+    get_Real(): PrivateScope, Public, HideBySig, SpecialName
+    set_Real(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_Imaginary(): PrivateScope, Public, HideBySig, SpecialName
+    set_Imaginary(Double): PrivateScope, Public, HideBySig, SpecialName
+    get_IsReal(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsImaginary(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsZero(): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Complex): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(Complex): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Sqrt(Complex): PrivateScope, Public, Static, HideBySig
+    Power(Complex, Int32): PrivateScope, Public, Static, HideBySig
+    Add(Complex, Double): PrivateScope, Public, Static, HideBySig
+    Add(Complex, Complex): PrivateScope, Public, Static, HideBySig
+    Subtract(Complex, Double): PrivateScope, Public, Static, HideBySig
+    Subtract(Complex, Complex): PrivateScope, Public, Static, HideBySig
+    Multiply(Complex, Double): PrivateScope, Public, Static, HideBySig
+    Multiply(Complex, Complex): PrivateScope, Public, Static, HideBySig
+    Divide(Complex, Double): PrivateScope, Public, Static, HideBySig
+    Divide(Complex, Complex): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Explicit(Double): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Complex, Double): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Complex, Complex): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Complex, Double): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Complex, Complex): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Complex, Double): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Complex, Complex): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Complex, Double): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Complex, Complex): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Complex, Complex): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Complex, Complex): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_GreaterThan(Complex, Complex): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThan(Complex, Complex): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Common.ContourInfo: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int32, Int32, Microsoft.FaceSdk.Common.ContourType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Common.ContourInfo]
+  Properties:
+    Int32 Index 'get ' : 
+    Int32 Count 'get ' : 
+    Microsoft.FaceSdk.Common.ContourType Contour 'get ' : 
+  Methods:
+    Equals(ContourInfo): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(ContourInfo, ContourInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(ContourInfo, ContourInfo): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Index(): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+    get_Contour(): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Common.ContourType: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Common.ContourType Open = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Common.ContourType Closed = 1 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.Common.Deque`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T
+  :System.Collections.Generic.List`1[T]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    PushFront(T): PrivateScope, Public, HideBySig
+    Pushback(T): PrivateScope, Public, HideBySig
+    PopFront(): PrivateScope, Public, HideBySig
+    PopBack(): PrivateScope, Public, HideBySig
+Class Microsoft.FaceSdk.Common.Extension.ArrayExtension: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    UpdateEach(T[], Func`2): PrivateScope, Public, Static, HideBySig
+    Clear(T[], Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Clear(T[]): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Common.Extension.CollectionExtension: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ForEach(ICollection`1, Action`1): PrivateScope, Public, Static, HideBySig
+    UpdateEach(Collection`1, Func`2): PrivateScope, Public, Static, HideBySig
+    CopyTo(ICollection`1, IList`1, Int32): PrivateScope, Public, Static, HideBySig
+    CopyTo(IList`1, Int32, IList`1, Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Common.Extension.PointExtension: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetCenter(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    GetCenter(IList`1, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    AroundRect(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    AroundRect(IList`1, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Scale(IList`1, Single, Single): PrivateScope, Public, Static, HideBySig
+    Scale(IList`1, Int32, Int32, Single, Single): PrivateScope, Public, Static, HideBySig
+    Translate(IList`1, Single, Single): PrivateScope, Public, Static, HideBySig
+    Translate(IList`1, Int32, Int32, PointF): PrivateScope, Public, Static, HideBySig
+    Translate(IList`1, PointF): PrivateScope, Public, Static, HideBySig
+    GetCenter(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    AroundRect(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    Scale(IList`1, Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    Translate(IList`1, Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    Translate(IList`1, Vertex3D): PrivateScope, Public, Static, HideBySig
+    ToPoint(Vertex3D): PrivateScope, Public, Static, HideBySig
+    ToVertex(PointF): PrivateScope, Public, Static, HideBySig
+Interface Microsoft.FaceSdk.Common.IBinarySerializer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Read(BinaryReader): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Write(BinaryWriter): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Microsoft.FaceSdk.Common.ITextSerializer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    Read(StreamReader): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Write(StreamWriter): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Microsoft.FaceSdk.Common.JaggedArray: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Create(Int32): PrivateScope, Public, Static, HideBySig
+    Create(Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Create(Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Clear(T[]): PrivateScope, Public, Static, HideBySig
+    Clear(T[][]): PrivateScope, Public, Static, HideBySig
+    Clear(T[][][]): PrivateScope, Public, Static, HideBySig
+    Copy(T[], T[]): PrivateScope, Public, Static, HideBySig
+    Copy(T[][], T[][]): PrivateScope, Public, Static, HideBySig
+    Copy(T[][][], T[][][]): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Common.Misc: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Swap(T&, T&): PrivateScope, Public, Static, HideBySig
+    Sort(T[]): PrivateScope, Public, Static, HideBySig
+    Clamp(T, T, T): PrivateScope, Public, Static, HideBySig
+    Pow(Double, Double): PrivateScope, Public, Static, HideBySig
+Struct Microsoft.FaceSdk.Common.Point: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.Point): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Common.Point]
+    System.IComparable`1[Microsoft.FaceSdk.Common.Point]
+  Fields:
+    Microsoft.FaceSdk.Common.Point Empty : Public, Static, InitOnly
+  Properties:
+    Int32 X    'get set' : 
+    Int32 Y    'get set' : 
+    Double Length 'get ' : 
+  Methods:
+    DistanceTo(Point): PrivateScope, Public, HideBySig
+    AngleTo(Point): PrivateScope, Public, HideBySig
+    Inclination(Point): PrivateScope, Public, HideBySig
+    Equals(Point): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(Point): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(Point, Int32): PrivateScope, Public, Static, HideBySig
+    Add(Point, Point): PrivateScope, Public, Static, HideBySig
+    Subtract(Point, Point): PrivateScope, Public, Static, HideBySig
+    Multiply(Point, Point): PrivateScope, Public, Static, HideBySig
+    Multiply(Point, Int32): PrivateScope, Public, Static, HideBySig
+    Multiply(Point, Single): PrivateScope, Public, Static, HideBySig
+    Divide(Point, Int32): PrivateScope, Public, Static, HideBySig
+    Negate(): PrivateScope, Public, HideBySig
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Addition(Point, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Point, Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Point, Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Point, Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Point, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Point, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Point, Int32): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Point, Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Point, Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThan(Point, Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_GreaterThan(Point, Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryNegation(Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Point): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Point): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Common.PointF: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.PointF): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Common.PointF]
+    System.IComparable`1[Microsoft.FaceSdk.Common.PointF]
+  Fields:
+    Microsoft.FaceSdk.Common.PointF Empty : Public, Static, InitOnly
+  Properties:
+    Single X   'get set' : 
+    Single Y   'get set' : 
+    Double Length 'get ' : 
+  Methods:
+    DistanceTo(PointF): PrivateScope, Public, HideBySig
+    AngleTo(PointF): PrivateScope, Public, HideBySig
+    Inclination(PointF): PrivateScope, Public, HideBySig
+    Equals(PointF): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(PointF): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Add(PointF, Single): PrivateScope, Public, Static, HideBySig
+    Add(PointF, PointF): PrivateScope, Public, Static, HideBySig
+    Subtract(PointF, PointF): PrivateScope, Public, Static, HideBySig
+    Multiply(PointF, PointF): PrivateScope, Public, Static, HideBySig
+    Multiply(PointF, Single): PrivateScope, Public, Static, HideBySig
+    Multiply(PointF, Single, Single): PrivateScope, Public, Static, HideBySig
+    Divide(PointF, Single): PrivateScope, Public, Static, HideBySig
+    Negate(): PrivateScope, Public, HideBySig
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Addition(PointF, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(PointF, PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(PointF, PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(PointF, PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(PointF, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(PointF, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(PointF, PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(PointF, PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThan(PointF, PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_GreaterThan(PointF, PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryNegation(PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(PointF): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Common.Ptr`1[T]: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  Type parameter: T
+  :System.ValueType
+  Interfaces:
+    System.IComparable`1[Microsoft.FaceSdk.Common.Ptr`1[T]]
+    System.IEquatable`1[Microsoft.FaceSdk.Common.Ptr`1[T]]
+  Properties:
+    Int64 CurrentIndex 'get ' : 
+    T[] Buffer 'get ' : 
+    T Value    'get set' : 
+    Int64 MaxIndex 'get ' : 
+    T Item [Int64] 'get set' : 
+  Methods:
+    get_CurrentIndex(): PrivateScope, Public, HideBySig, SpecialName
+    get_Buffer(): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(T): PrivateScope, Public, HideBySig, SpecialName
+    get_MaxIndex(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int64): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int64, T): PrivateScope, Public, HideBySig, SpecialName
+    CopyTo(Ptr`1, Int32): PrivateScope, Public, HideBySig
+    Clear(Int32, Int32): PrivateScope, Public, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    ReadValue(): PrivateScope, Public, HideBySig
+    SyncBuffer(Int64): PrivateScope, Public, HideBySig
+    op_Implicit(Ptr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Ptr`1, Ptr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Ptr`1, Int64): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Ptr`1, Int64): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Increment(Ptr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Decrement(Ptr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThan(Ptr`1, Ptr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_GreaterThan(Ptr`1, Ptr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Ptr`1, Ptr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Ptr`1, Ptr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(T[]): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Common.Rectangle: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.Rectangle): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Common.Rectangle]
+    System.IComparable`1[Microsoft.FaceSdk.Common.Rectangle]
+  Fields:
+    Microsoft.FaceSdk.Common.Rectangle Empty : Public, Static, InitOnly
+  Properties:
+    Int32 Width 'get ' : 
+    Int32 Height 'get ' : 
+    Int32 Area 'get ' : 
+    Microsoft.FaceSdk.Common.Point Center 'get ' : 
+    Microsoft.FaceSdk.Common.Point Location 'get ' : 
+    Microsoft.FaceSdk.Common.Size Size 'get ' : 
+    Boolean IsEmpty 'get ' : 
+    Int32 Left 'get set' : 
+    Int32 Top  'get set' : 
+    Int32 Right 'get set' : 
+    Int32 Bottom 'get set' : 
+  Methods:
+    FromLTWH(Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Equals(Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(Rectangle): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(Rectangle): PrivateScope, Public, HideBySig
+    Contains(Int32, Int32): PrivateScope, Public, HideBySig
+    Contains(Point): PrivateScope, Public, HideBySig
+    Translate(Int32, Int32): PrivateScope, Public, HideBySig
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_Area(): PrivateScope, Public, HideBySig, SpecialName
+    get_Center(): PrivateScope, Public, HideBySig, SpecialName
+    get_Location(): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_Left(): PrivateScope, Public, HideBySig, SpecialName
+    set_Left(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Top(): PrivateScope, Public, HideBySig, SpecialName
+    set_Top(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Right(): PrivateScope, Public, HideBySig, SpecialName
+    set_Right(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Bottom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Bottom(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Multiply(Rectangle, Single): PrivateScope, Public, Static, HideBySig
+    Intersect(Rectangle, Rectangle): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Multiply(Rectangle, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Rectangle, Rectangle): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Rectangle, Rectangle): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThan(Rectangle, Rectangle): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_GreaterThan(Rectangle, Rectangle): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Rectangle): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Common.RectangleF: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.RectangleF): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Common.RectangleF]
+    System.IComparable`1[Microsoft.FaceSdk.Common.RectangleF]
+  Fields:
+    Microsoft.FaceSdk.Common.RectangleF Empty : Public, Static, InitOnly
+  Properties:
+    Single Width 'get ' : 
+    Single Height 'get ' : 
+    Single Area 'get ' : 
+    Microsoft.FaceSdk.Common.PointF Center 'get ' : 
+    Microsoft.FaceSdk.Common.PointF Location 'get ' : 
+    Microsoft.FaceSdk.Common.SizeF Size 'get ' : 
+    Boolean IsEmpty 'get ' : 
+    Single Left 'get set' : 
+    Single Top 'get set' : 
+    Single Right 'get set' : 
+    Single Bottom 'get set' : 
+  Methods:
+    FromLTWH(Single, Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    Equals(RectangleF): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    CompareTo(RectangleF): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Contains(RectangleF): PrivateScope, Public, HideBySig
+    Contains(Single, Single): PrivateScope, Public, HideBySig
+    Contains(PointF): PrivateScope, Public, HideBySig
+    Translate(Single, Single): PrivateScope, Public, HideBySig
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_Area(): PrivateScope, Public, HideBySig, SpecialName
+    get_Center(): PrivateScope, Public, HideBySig, SpecialName
+    get_Location(): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_Left(): PrivateScope, Public, HideBySig, SpecialName
+    set_Left(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Top(): PrivateScope, Public, HideBySig, SpecialName
+    set_Top(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Right(): PrivateScope, Public, HideBySig, SpecialName
+    set_Right(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Bottom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Bottom(Single): PrivateScope, Public, HideBySig, SpecialName
+    Multiply(RectangleF, Single): PrivateScope, Public, Static, HideBySig
+    Intersect(RectangleF, RectangleF): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Multiply(RectangleF, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(RectangleF, RectangleF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(RectangleF, RectangleF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_LessThan(RectangleF, RectangleF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_GreaterThan(RectangleF, RectangleF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(RectangleF): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Common.ResourceType: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Common.ResourceType Content = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Common.ResourceType Resource = 1 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.Common.Round: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    SignedToInteger(Single): PrivateScope, Public, Static, HideBySig
+    SignedToIntegerMinor(Single): PrivateScope, Public, Static, HideBySig
+    ToInteger(Single): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Common.RoundRobbinQueue`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(System.Collections.Generic.IEnumerable`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[T]
+    System.Collections.IEnumerable
+  Methods:
+    Peek(): PrivateScope, Public, HideBySig
+    Dequeue(): PrivateScope, Public, HideBySig
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct Microsoft.FaceSdk.Common.ScanlinePtr`1[T]: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  Type parameter: T, System.ValueType,  NotNullableValueType DefaultConstructor
+  :System.ValueType
+    Void .ctor(T[], Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.Ptr`1[T], Int32, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Common.ScanlinePtr`1[T]]
+  Properties:
+    Int32 Width 'get ' : 
+    Int32 Channels 'get ' : 
+    Int32 Stride 'get ' : 
+    Int32 HorizontalStep 'get ' : 
+    Int32 VerticalStep 'get ' : 
+    Microsoft.FaceSdk.Common.Ptr`1[T] Pointer 'get ' : 
+    T Item [Int32] 'get set' : 
+    T Value    'get set' : 
+  Methods:
+    Increment(): PrivateScope, Public, HideBySig
+    Decrement(): PrivateScope, Public, HideBySig
+    Equals(ScanlinePtr`1): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Channels(): PrivateScope, Public, HideBySig, SpecialName
+    get_Stride(): PrivateScope, Public, HideBySig, SpecialName
+    get_HorizontalStep(): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalStep(): PrivateScope, Public, HideBySig, SpecialName
+    get_Pointer(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, T): PrivateScope, Public, HideBySig, SpecialName
+    get_Value(): PrivateScope, Public, HideBySig, SpecialName
+    set_Value(T): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Increment(ScanlinePtr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Decrement(ScanlinePtr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(ScanlinePtr`1, ScanlinePtr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(ScanlinePtr`1, ScanlinePtr`1): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Common.Vector`1[T]: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  Type parameter: T,  DefaultConstructor
+  :System.Collections.ObjectModel.Collection`1[T]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IList`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    AddRange(IEnumerable`1): PrivateScope, Public, HideBySig
+    Resize(Int32): PrivateScope, Public, HideBySig
+Class Microsoft.FaceSdk.Common.Shape: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.Vector`1[Microsoft.FaceSdk.Common.PointF]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[Microsoft.FaceSdk.Common.PointF]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IList`1[Microsoft.FaceSdk.Common.PointF], Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IList`1[Microsoft.FaceSdk.Common.PointF], System.Collections.Generic.IList`1[System.Int32]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IList`1[System.Single]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.BinaryReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.StreamReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.String): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+    Microsoft.FaceSdk.Common.ITextSerializer
+  Methods:
+    Clone(): PrivateScope, Public, HideBySig
+    ToVector(): PrivateScope, Public, HideBySig
+    SetX(Int32, Single): PrivateScope, Public, HideBySig
+    SetY(Int32, Single): PrivateScope, Public, HideBySig
+    CenterPoint(Int32, Int32): PrivateScope, Public, HideBySig
+    CenterPoint(): PrivateScope, Public, HideBySig
+    AroundRect(): PrivateScope, Public, HideBySig
+    DistanceTo(IList`1): PrivateScope, Public, HideBySig
+    PointToPointAverageDistance(IList`1): PrivateScope, Public, HideBySig
+    Scale(Single): PrivateScope, Public, HideBySig
+    Scale(Single, Single): PrivateScope, Public, HideBySig
+    AddOffset(IList`1): PrivateScope, Public, HideBySig
+    ScaleAroundCenter(Single): PrivateScope, Public, HideBySig
+    Translate(PointF): PrivateScope, Public, HideBySig
+    Translate(Single, Single): PrivateScope, Public, HideBySig
+    Rotate(Single): PrivateScope, Public, HideBySig
+    AlignTangent(Shape): PrivateScope, Public, HideBySig
+    Copy(IList`1, Int32, IList`1, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Copy(IList`1, IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    Double(): PrivateScope, Public, HideBySig
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Read(StreamReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(StreamWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Read(String): PrivateScope, Public, HideBySig
+    Write(String): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct Microsoft.FaceSdk.Common.Size: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Microsoft.FaceSdk.Common.Point): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.Size): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Microsoft.FaceSdk.Common.Size Empty : Public, Static, InitOnly
+  Properties:
+    Int32 Height 'get set' : 
+    Boolean IsEmpty 'get ' : 
+    Int32 Width 'get set' : 
+  Methods:
+    op_Subtraction(Size, Size): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Size, Size): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Size, Size): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Size, Size): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Size): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Implicit(Size): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Add(Size, Size): PrivateScope, Public, Static, HideBySig
+    Ceiling(SizeF): PrivateScope, Public, Static, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Round(SizeF): PrivateScope, Public, Static, HideBySig
+    Subtract(Size, Size): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Truncate(SizeF): PrivateScope, Public, Static, HideBySig
+Struct Microsoft.FaceSdk.Common.SizeF: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Microsoft.FaceSdk.Common.PointF): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.SizeF): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Microsoft.FaceSdk.Common.SizeF Empty : Public, Static, InitOnly
+  Properties:
+    Single Height 'get set' : 
+    Boolean IsEmpty 'get ' : 
+    Single Width 'get set' : 
+  Methods:
+    op_Subtraction(SizeF, SizeF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(SizeF, SizeF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(SizeF, SizeF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(SizeF, SizeF): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(SizeF): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Single): PrivateScope, Public, HideBySig, SpecialName
+    Add(SizeF, SizeF): PrivateScope, Public, Static, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Subtract(SizeF, SizeF): PrivateScope, Public, Static, HideBySig
+    ToPointF(): PrivateScope, Public, HideBySig
+    ToSize(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+Struct Microsoft.FaceSdk.Common.Vector3D: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single, Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.PointF): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.Point): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Common.Vertex3D): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Common.Vector3D]
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Fields:
+    Microsoft.FaceSdk.Common.Vector3D Empty : Public, Static, InitOnly
+  Properties:
+    Single X   'get set' : 
+    Single Y   'get set' : 
+    Single Z   'get set' : 
+    Single W   'get set' : 
+    Single Length 'get ' : 
+  Methods:
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Z(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_W(): PrivateScope, Public, HideBySig, SpecialName
+    set_W(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    Scale(Single): PrivateScope, Public, HideBySig
+    Scale(Single, Single, Single, Single): PrivateScope, Public, HideBySig
+    Normalize(): PrivateScope, Public, HideBySig
+    Add(Vector3D): PrivateScope, Public, HideBySig
+    Substract(Vector3D): PrivateScope, Public, HideBySig
+    Multiply(Single): PrivateScope, Public, HideBySig
+    Divide(Single): PrivateScope, Public, HideBySig
+    Negate(): PrivateScope, Public, HideBySig
+    CrossProduct(Vector3D, Vector3D): PrivateScope, Public, Static, HideBySig
+    Equals(Vector3D): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    op_Addition(Vector3D, Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Vector3D, Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector3D, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Vector3D, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryNegation(Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Vertex3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Equality(Vector3D, Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Vector3D, Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Common.Vertex3D: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Common.Vertex3D]
+  Fields:
+    Microsoft.FaceSdk.Common.Vertex3D Empty : Public, Static, InitOnly
+  Properties:
+    Single X   'get set' : 
+    Single Y   'get set' : 
+    Single Z   'get set' : 
+  Methods:
+    Scale(Single): PrivateScope, Public, HideBySig
+    DistanceTo(Vertex3D): PrivateScope, Public, HideBySig
+    SquareDistanceTo(Vertex3D): PrivateScope, Public, HideBySig
+    Add(Vertex3D): PrivateScope, Public, HideBySig
+    Subtract(Vertex3D): PrivateScope, Public, HideBySig
+    Multiply(Single): PrivateScope, Public, HideBySig
+    Divide(Single): PrivateScope, Public, HideBySig
+    Negate(): PrivateScope, Public, HideBySig
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Z(): PrivateScope, Public, HideBySig, SpecialName
+    set_Z(Single): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Vertex3D): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(Vertex3D, Vertex3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Vertex3D, Vertex3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(Vertex3D, Vertex3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(Vertex3D, Vertex3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vertex3D, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(Vertex3D, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_UnaryNegation(Vertex3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Vertex3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Explicit(Vertex3D): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Geometry.SketchPart: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.Vector`1[Microsoft.FaceSdk.Geometry.StrokeSet]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Geometry.SketchPart): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.BinaryReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Properties:
+    Microsoft.FaceSdk.Geometry.Visibility ShowState 'get set' : 
+    Microsoft.FaceSdk.Common.Shape ClipPath 'get set' : 
+    Int32 StrokeCount 'get ' : 
+  Methods:
+    get_ShowState(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowState(Visibility): PrivateScope, Public, HideBySig, SpecialName
+    get_ClipPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_ClipPath(Shape): PrivateScope, Public, HideBySig, SpecialName
+    get_StrokeCount(): PrivateScope, Public, HideBySig, SpecialName
+    Translate(Single, Single): PrivateScope, Public, HideBySig
+    Scale(Single): PrivateScope, Public, HideBySig
+    Scale(Single, Single): PrivateScope, Public, HideBySig
+    AroundRect(): PrivateScope, Public, HideBySig
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    op_Division(SketchPart, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Geometry.StrokeType: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Geometry.StrokeType CatmullRomLine = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Geometry.StrokeType CubicBezierLine = 100 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Geometry.StrokeType CatmullRomRegion = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Geometry.StrokeType CubicBezierRegion = 255 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Geometry.StrokeType Circle = 150 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Geometry.StrokeType Control = 200 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.Geometry.Visibility: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Geometry.Visibility Visible = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Geometry.Visibility Invisible = 1 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.Geometry.Stroke: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Geometry.Stroke): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.BinaryReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Properties:
+    Microsoft.FaceSdk.Geometry.StrokeType StrokeType 'get set' : 
+    Microsoft.FaceSdk.Geometry.Visibility ShowType 'get set' : 
+    Microsoft.FaceSdk.Image.Color LineColor 'get set' : 
+    Microsoft.FaceSdk.Image.Color FillColor 'get set' : 
+    Single LineWidth 'get set' : 
+    Microsoft.FaceSdk.Common.Shape PrimaryPath 'get set' : 
+    Microsoft.FaceSdk.Common.Shape SkeletonPath 'get set' : 
+    Microsoft.FaceSdk.Common.Shape ControlPath 'get set' : 
+    Microsoft.FaceSdk.Common.Shape ClipPath 'get set' : 
+  Methods:
+    get_StrokeType(): PrivateScope, Public, HideBySig, SpecialName
+    set_StrokeType(StrokeType): PrivateScope, Public, HideBySig, SpecialName
+    get_ShowType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowType(Visibility): PrivateScope, Public, HideBySig, SpecialName
+    get_LineColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_LineColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_FillColor(): PrivateScope, Public, HideBySig, SpecialName
+    set_FillColor(Color): PrivateScope, Public, HideBySig, SpecialName
+    get_LineWidth(): PrivateScope, Public, HideBySig, SpecialName
+    set_LineWidth(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_PrimaryPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_PrimaryPath(Shape): PrivateScope, Public, HideBySig, SpecialName
+    get_SkeletonPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_SkeletonPath(Shape): PrivateScope, Public, HideBySig, SpecialName
+    get_ControlPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_ControlPath(Shape): PrivateScope, Public, HideBySig, SpecialName
+    get_ClipPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_ClipPath(Shape): PrivateScope, Public, HideBySig, SpecialName
+    ToRegion(): PrivateScope, Public, HideBySig
+    Translate(Single, Single): PrivateScope, Public, HideBySig
+    Scale(Single): PrivateScope, Public, HideBySig
+    Scale(Single, Single): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    op_Division(Stroke, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Geometry.StrokeSet: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.Vector`1[Microsoft.FaceSdk.Geometry.Stroke]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Geometry.StrokeSet): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.BinaryReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Properties:
+    Microsoft.FaceSdk.Geometry.Visibility ShowType 'get set' : 
+    Microsoft.FaceSdk.Common.Shape ClipPath 'get set' : 
+  Methods:
+    get_ShowType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ShowType(Visibility): PrivateScope, Public, HideBySig, SpecialName
+    get_ClipPath(): PrivateScope, Public, HideBySig, SpecialName
+    set_ClipPath(Shape): PrivateScope, Public, HideBySig, SpecialName
+    Translate(Single, Single): PrivateScope, Public, HideBySig
+    Scale(Single): PrivateScope, Public, HideBySig
+    Scale(Single, Single): PrivateScope, Public, HideBySig
+    AroundRect(): PrivateScope, Public, HideBySig
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    op_Division(StrokeSet, Single): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.Image.ArgbOrder: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Image.ArgbOrder A = 3 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.ArgbOrder R = 2 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.ArgbOrder G = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.ArgbOrder B = 0 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.Image.RgbaOrder: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Image.RgbaOrder R = 3 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.RgbaOrder G = 2 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.RgbaOrder B = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.RgbaOrder A = 0 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.Image.Color: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Byte, Byte, Byte, Byte): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Image.Color]
+  Fields:
+    Byte ChannelMinValue : Public, Static, InitOnly
+    Byte ChannelMaxValue : Public, Static, InitOnly
+    Int32 ArgbChannels : Public, Static, InitOnly
+    Int32 RgbChannels : Public, Static, InitOnly
+    Int32 GrayChannels : Public, Static, InitOnly
+    Microsoft.FaceSdk.Image.Color Empty : Public, Static, InitOnly
+    Microsoft.FaceSdk.Image.Color White : Public, Static, InitOnly
+    Microsoft.FaceSdk.Image.Color Black : Public, Static, InitOnly
+    Microsoft.FaceSdk.Image.Color Transparent : Public, Static, InitOnly
+    Microsoft.FaceSdk.Image.Color Red : Public, Static, InitOnly
+    Microsoft.FaceSdk.Image.Color Green : Public, Static, InitOnly
+    Microsoft.FaceSdk.Image.Color Blue : Public, Static, InitOnly
+    Int32 AlphaShift : Public, Static, InitOnly
+    Int32 RedShift : Public, Static, InitOnly
+    Int32 GreenShift : Public, Static, InitOnly
+    Int32 BlueShift : Public, Static, InitOnly
+    UInt32 AlphaMask : Public, Static, InitOnly
+    UInt32 RedMask : Public, Static, InitOnly
+    UInt32 GreenMask : Public, Static, InitOnly
+    UInt32 BlueMask : Public, Static, InitOnly
+  Properties:
+    Byte A     'get set' : 
+    Byte R     'get set' : 
+    Byte G     'get set' : 
+    Byte B     'get set' : 
+  Methods:
+    get_A(): PrivateScope, Public, HideBySig, SpecialName
+    set_A(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_R(): PrivateScope, Public, HideBySig, SpecialName
+    set_R(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_G(): PrivateScope, Public, HideBySig, SpecialName
+    set_G(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_B(): PrivateScope, Public, HideBySig, SpecialName
+    set_B(Byte): PrivateScope, Public, HideBySig, SpecialName
+    FromInt(Int32): PrivateScope, Public, Static, HideBySig
+    FromArgb(Byte, Byte, Byte, Byte): PrivateScope, Public, Static, HideBySig
+    FromBytes(Ptr`1): PrivateScope, Public, Static, HideBySig
+    FromYuv(YuvColor): PrivateScope, Public, Static, HideBySig
+    FromHsv(HsvColor): PrivateScope, Public, Static, HideBySig
+    ToYuv(): PrivateScope, Public, HideBySig
+    ToHsv(): PrivateScope, Public, HideBySig
+    ToInt(): PrivateScope, Public, HideBySig
+    BlendPixel(Color, Color, Byte): PrivateScope, Public, Static, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(Color): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    op_Equality(Color, Color): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(Color, Color): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Image.ColorSpace: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Rgb2Grayscale(Color): PrivateScope, Public, Static, HideBySig
+    Rgb2Grayscale(Byte, Byte, Byte): PrivateScope, Public, Static, HideBySig
+    Rgb2Yuv(Byte, Byte, Byte): PrivateScope, Public, Static, HideBySig
+    Yuv2Rgb(Byte, Byte, Byte): PrivateScope, Public, Static, HideBySig
+    Rgb2Yuv(Image`1, Image`1, Image`1): PrivateScope, Public, Static, HideBySig
+    Rgb2Yuv(Image`1, Rectangle, Image`1): PrivateScope, Public, Static, HideBySig
+    Yuv2Rgb(Image`1, Rectangle, Image`1): PrivateScope, Public, Static, HideBySig
+    MatchColor(Image`1, Image`1, Image`1, Image`1, Image`1, Nullable`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.Convolution: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ImageBlurFixed14641(Image`1, Image`1): PrivateScope, Public, Static, HideBySig
+    ImageBlurFixed121(Image`1, Image`1): PrivateScope, Public, Static, HideBySig
+    BinaryImageErode(Image`1, Int32): PrivateScope, Public, Static, HideBySig
+    BinaryImageDilate(Image`1, Int32): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.CropScale: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ResizeImage(Ptr`1, Ptr`1, Int32, Int32, Int32, Int32, Int32, Ptr`1, Nullable`1, Nullable`1): PrivateScope, Public, Static, HideBySig
+    ResizeImage(Ptr`1, Ptr`1, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Ptr`1, Nullable`1, Nullable`1): PrivateScope, Public, Static, HideBySig
+    GetLocalPatch(Image`1, Single, Single, Single, Single, Single, Single, Single, Single, Int32, Int32, Ptr`1): PrivateScope, Public, Static, HideBySig
+    Crop2(Byte[], Int32, Int32, Int32, Int32, Int32, Int32, Int32, Byte[], Int32[], Byte[]): PrivateScope, Public, Static, HideBySig
+    CropRegion(Byte[], Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Byte[], Int32[], Byte[]): PrivateScope, Public, Static, HideBySig
+    RotateCropImage2DExt(Ptr`1, Int32, Int32, Ptr`1, Int32, Int32, Single, Single, Single, Int32, Int32, Int32, Single, Single): PrivateScope, Public, Static, HideBySig
+    RotateImage(Image`1, Size, PointF, Single): PrivateScope, Public, Static, HideBySig
+    RotateImage(Image`1, PointF, Single): PrivateScope, Public, Static, HideBySig
+    BuildGaussianPyramid(Image`1, Int32, PyramidKernel): PrivateScope, Public, Static, HideBySig
+    CropScaleImage(Image`1, Rectangle, Size, Color, Point&(Out), Single&(Out)): PrivateScope, Public, Static, HideBySig
+    CropScaleImage(Image`1, Rectangle, Size): PrivateScope, Public, Static, HideBySig
+    CropScaleImage(Image`1, Rectangle, Size, Point, Int32, Single&(Out)): PrivateScope, Public, Static, HideBySig
+    ScaleImage(Image`1, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ScaleImage(Image`1, Int32, Single&(Out)): PrivateScope, Public, Static, HideBySig
+    DownSample(Image`1): PrivateScope, Public, Static, HideBySig
+    DownSample(Image`1, Image`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.FitMixGaussian: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Fit(Image`1, Rectangle, MultiGaussian&(Out), Vector`1&(Out)): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.Histogram: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 HistogramGrayCount = 256 : Public, Static, Literal, HasDefault
+  Methods:
+    Equalization(Byte[]): PrivateScope, Public, Static, HideBySig
+    Equalization(Byte[], Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Equalization(Byte[], Int32, Int32, Rectangle): PrivateScope, Public, Static, HideBySig
+    LogStretch(Byte[], Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+Struct Microsoft.FaceSdk.Image.HsvOrder: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Image.HsvOrder H = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.HsvOrder S = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.HsvOrder V = 2 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.Image.HsvColor: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+    Void .ctor(Single, Single, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Image.HsvColor]
+  Fields:
+    Microsoft.FaceSdk.Image.HsvColor Empty : Public, Static, InitOnly
+  Properties:
+    Single H   'get set' : 
+    Single S   'get set' : 
+    Single V   'get set' : 
+  Methods:
+    FromArgb(Color): PrivateScope, Public, Static, HideBySig
+    ToArgb(): PrivateScope, Public, HideBySig
+    Equals(HsvColor): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Subtract(HsvColor): PrivateScope, Public, HideBySig
+    get_H(): PrivateScope, Public, HideBySig, SpecialName
+    set_H(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_S(): PrivateScope, Public, HideBySig, SpecialName
+    set_S(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_V(): PrivateScope, Public, HideBySig, SpecialName
+    set_V(Single): PrivateScope, Public, HideBySig, SpecialName
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(HsvColor, HsvColor): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(HsvColor, HsvColor): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(HsvColor, HsvColor): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Image.Image`1[T]: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  Type parameter: T
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(T[], Int32, Int32, Int32, Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Image.Image`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.Generic.IEnumerable`1[T]
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Width 'get set' : 
+    Int32 Height 'get set' : 
+    Int32 Stride 'get ' : 
+    Int32 Channels 'get set' : 
+    Int32 ChannelSize 'get ' : 
+    Int32 PixelSize 'get ' : 
+    T[] Buffer 'get ' : 
+    Boolean IsEmpty 'get ' : 
+    T Item [Int32] 'get set' : 
+    Int32 Length 'get ' : 
+    Microsoft.FaceSdk.Common.Size Size 'get ' : 
+    Microsoft.FaceSdk.Common.Rectangle Region 'get ' : 
+  Methods:
+    FromIntPtr(IntPtr, Int32, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    Allocate(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    Deallocate(): PrivateScope, Public, HideBySig
+    Copy(Image`1): PrivateScope, Public, HideBySig
+    Clone(): PrivateScope, Public, HideBySig
+    GetRowPtr(Int32): PrivateScope, Public, HideBySig
+    GetPixelPtr(Int32, Int32): PrivateScope, Public, HideBySig
+    GetValue(Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    SetValue(Int32, Int32, Int32, T): PrivateScope, Public, HideBySig
+    FillPixels(T): PrivateScope, Public, HideBySig
+    ClearPixels(): PrivateScope, Public, HideBySig
+    CopyPixelsTo(Image`1, Point): PrivateScope, Public, HideBySig
+    CopyPixelsTo(Image`1, Point, Rectangle): PrivateScope, Public, HideBySig
+    SubImage(Rectangle): PrivateScope, Public, HideBySig
+    SubImage(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    HorizontalFlip(): PrivateScope, Public, HideBySig
+    VerticalFlip(): PrivateScope, Public, HideBySig
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_Stride(): PrivateScope, Public, HideBySig, SpecialName
+    get_Channels(): PrivateScope, Public, HideBySig, SpecialName
+    get_ChannelSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_PixelSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_Buffer(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsEmpty(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, T): PrivateScope, Public, HideBySig, SpecialName
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    get_Size(): PrivateScope, Public, HideBySig, SpecialName
+    get_Region(): PrivateScope, Public, HideBySig, SpecialName
+    GetEnumerator(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Image.ImageARGB: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :Microsoft.FaceSdk.Image.Image`1[System.Byte]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[], Int32, Int32, Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Image.Image`1[System.Byte]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    FillTransparent(Byte): PrivateScope, Public, HideBySig
+    Allocate(Int32, Int32): PrivateScope, Public, HideBySig
+    Copy(Image`1): PrivateScope, Public, HideBySig
+    Share(Image`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.ImageDistortion: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.FaceSdk.Image.InterpolationMode Mode 'get set' : 
+  Methods:
+    get_Mode(): PrivateScope, Public, HideBySig, SpecialName
+    set_Mode(InterpolationMode): PrivateScope, Public, HideBySig, SpecialName
+    BloatWarping(Image`1, Point, Int32, Single): PrivateScope, Public, HideBySig
+    CartesianFisheyeLinear(Image`1, Rectangle, Single, Single): PrivateScope, Public, HideBySig
+Class Microsoft.FaceSdk.Image.ImageDraw: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    SetValue(Image`1, Int32, Int32, Color): PrivateScope, Public, Static, HideBySig
+    SetValue(Image`1, Point, Color): PrivateScope, Public, Static, HideBySig
+    ClearPixels(Image`1, Color): PrivateScope, Public, Static, HideBySig
+    ClearPixels(Image`1, Rectangle, Color): PrivateScope, Public, Static, HideBySig
+    DrawLine(Image`1, Int32, Int32, Int32, Int32, Color): PrivateScope, Public, Static, HideBySig
+    DrawLine(Image`1, Int32, Int32, Int32, Int32, Color, Int32): PrivateScope, Public, Static, HideBySig
+    DrawLine(Image`1, Point, Point, Color): PrivateScope, Public, Static, HideBySig
+    DrawLine(Image`1, Point, Point, Color, Int32): PrivateScope, Public, Static, HideBySig
+    DrawRectangle(Image`1, Rectangle, Color, Int32): PrivateScope, Public, Static, HideBySig
+    DrawEllipse(Image`1, Int32, Int32, Int32, Int32, Color): PrivateScope, Public, Static, HideBySig
+    DrawEllipseCentered(Image`1, Int32, Int32, Int32, Int32, Color): PrivateScope, Public, Static, HideBySig
+    DrawBezier(Image`1, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Color): PrivateScope, Public, Static, HideBySig
+    DrawBeziers(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    DrawBeziers(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    DrawBeziers(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    DrawPolyline(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    DrawPolyline(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    DrawCurve(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    DrawCurveClosed(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    DrawCurve(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    DrawCurve(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    DrawCurveClosed(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    DrawCurveClosed(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    FillEllipse(Image`1, Int32, Int32, Int32, Int32, Color): PrivateScope, Public, Static, HideBySig
+    FillEllipseCentered(Image`1, Int32, Int32, Int32, Int32, Color): PrivateScope, Public, Static, HideBySig
+    FillPolygon(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    FillPolygon(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    FillPolygon(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    FillBezier(Image`1, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Int32, Color): PrivateScope, Public, Static, HideBySig
+    FillBeziers(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    FillBeziers(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    FillBeziers(Image`1, IList`1, Color): PrivateScope, Public, Static, HideBySig
+    FillCurve(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    FillCurveClosed(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    FillCurve(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    FillCurve(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    FillCurveClosed(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+    FillCurveClosed(Image`1, IList`1, Single, Color): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.ImageGray: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  :Microsoft.FaceSdk.Image.Image`1[System.Byte]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Byte[], Int32, Int32, Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Image.Image`1[System.Byte]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Allocate(Int32, Int32): PrivateScope, Public, HideBySig
+    Copy(Image`1): PrivateScope, Public, HideBySig
+    Share(Image`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.ImageIO: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Read(Image`1, Stream): PrivateScope, Public, Static, HideBySig
+    Read(Stream): PrivateScope, Public, Static, HideBySig
+    Write(Image`1, Stream): PrivateScope, Public, Static, HideBySig
+Struct Microsoft.FaceSdk.Image.PyramidKernel: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Image.PyramidKernel Kernel121 = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.PyramidKernel Kernel14641 = 1 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.Image.ImagePyramid`1[T]: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  Type parameter: T, System.ValueType,  NotNullableValueType DefaultConstructor
+  :Microsoft.FaceSdk.Common.Vector`1[Microsoft.FaceSdk.Image.Image`1[T]]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 BaseWidth 'get ' : 
+    Int32 BaseHeight 'get ' : 
+  Methods:
+    ClearImagePixels(): PrivateScope, Public, HideBySig
+    get_BaseWidth(): PrivateScope, Public, HideBySig, SpecialName
+    get_BaseHeight(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Image.ImageStd: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetImageMeanAndStd(Image`1, Int32, Double&(Out), Double&(Out)): PrivateScope, Public, Static, HideBySig
+    ComputeImageDistance(Image`1, Image`1, Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.ImageThreshold: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ThresholdImage(Image`1, Int32): PrivateScope, Public, Static, HideBySig
+    ThresholdImage(Image`1, Int32, Byte, Byte): PrivateScope, Public, Static, HideBySig
+    ThresholdImage(Image`1, Image`1, Nullable`1, Int32, Int32, Byte, Byte): PrivateScope, Public, Static, HideBySig
+    ThresholdImage(Image`1, Image`1, Nullable`1, Int32, Int32, Int32): PrivateScope, Public, Static, HideBySig
+    ComputeSegmentationThreshold(Image`1, Image`1, Single): PrivateScope, Public, Static, HideBySig
+Struct Microsoft.FaceSdk.Image.ColorSequence: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Image.ColorSequence Gray = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.ColorSequence Rgb = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.ColorSequence Bgr = 2 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.Image.ImageWrapper: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(Byte[], Int32, Int32, Int32, Int32, Microsoft.FaceSdk.Image.ColorSequence, System.Nullable`1[Microsoft.FaceSdk.Common.Rectangle]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 RoiWidth 'get ' : 
+    Int32 RoiHeight 'get ' : 
+    Int32 Stride 'get ' : 
+  Methods:
+    get_RoiWidth(): PrivateScope, Public, HideBySig, SpecialName
+    get_RoiHeight(): PrivateScope, Public, HideBySig, SpecialName
+    get_Stride(): PrivateScope, Public, HideBySig, SpecialName
+    GetRowPtr(Int32): PrivateScope, Public, HideBySig
+    GetGrayPixel(Int32, Int32): PrivateScope, Public, HideBySig
+Class Microsoft.FaceSdk.Image.IntegralImage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32 Width 'get ' : 
+    Int32 Height 'get ' : 
+    Int64[] Items 'get ' : 
+  Methods:
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    get_Items(): PrivateScope, Public, HideBySig, SpecialName
+    Calculate(ImageWrapper, Int32, Int32): PrivateScope, Public, HideBySig
+Struct Microsoft.FaceSdk.Image.InterpolationMode: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Image.InterpolationMode NearestNeighbor = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.InterpolationMode Bilinear = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.InterpolationMode Bicubic = 2 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.Image.Interpolation: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetValueByInterpolation(Ptr`1, Int32, Int32, Int32, Int32, Single, Single, Ptr`1): PrivateScope, Public, Static, HideBySig
+    GetValueByInterpolation(Image`1, Single, Single, Single): PrivateScope, Public, Static, HideBySig
+    GetValueByInterpolation(Image`1, Single, Single, Ptr`1): PrivateScope, Public, Static, HideBySig
+    BilinearInterpolation(Double, Double, Double, Double, Double, Double, Double, Double): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.Luminance: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed
+  Methods:
+    FromRgb(Byte[], Int32, Int32, Int32, Byte[], Int32): PrivateScope, Public, Static, HideBySig
+    FromBgr(Byte[], Int32, Int32, Int32, Byte[], Int32): PrivateScope, Public, Static, HideBySig
+    FromArgb(Byte[], Int32, Int32, Int32, Byte[], Int32): PrivateScope, Public, Static, HideBySig
+    FromRgba(Byte[], Int32, Int32, Int32, Byte[], Int32): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.Resample`1[TPixel]: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Type parameter: TPixel, System.ValueType,  NotNullableValueType DefaultConstructor
+  Methods:
+    ResampleImage(Image`1, Image`1, Transform4x4): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.Warp.MeshWarp: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Warp(Image`1, Image`1, PointF[][], PointF[][]): PrivateScope, Public, Static, HideBySig
+Struct Microsoft.FaceSdk.Image.Warp.TransformType: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Image.Warp.TransformType Affine = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.Warp.TransformType Similar = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.Warp.TransformType Rigid = 2 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.Image.Warp.MLSD: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(Single, Microsoft.FaceSdk.Image.Warp.TransformType): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 DefaultHorizontalStep : Public, Static, InitOnly
+    Int32 DefaultVerticalStep : Public, Static, InitOnly
+  Properties:
+    Int32 HorizontalStep 'get set' : 
+    Int32 VerticalStep 'get set' : 
+  Methods:
+    Initialize(IList`1, IList`1, PointF): PrivateScope, Public, HideBySig
+    Transform(IList`1, IList`1, Image`1): PrivateScope, Public, HideBySig
+    InvTransform(IList`1, IList`1, Image`1): PrivateScope, Public, HideBySig
+    InvTransform(IList`1, IList`1, Image`1, Image`1, Image`1, Rectangle): PrivateScope, Public, HideBySig
+    InvTransformResampled(IList`1, IList`1, Image`1, Image`1, Rectangle): PrivateScope, Public, HideBySig
+    InvTransformResampled(IList`1, IList`1, Image`1, Image`1, Rectangle, PointF[][]): PrivateScope, Public, HideBySig
+    get_HorizontalStep(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorizontalStep(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalStep(): PrivateScope, Public, HideBySig, SpecialName
+    set_VerticalStep(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Image.Warp.PCoeff: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+Class Microsoft.FaceSdk.Image.Warp.MultiFrameMLSD: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(Microsoft.FaceSdk.Image.Warp.TransformType, Single): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Image.Warp.TransformType, Single, Microsoft.FaceSdk.Image.Warp.PCoeff[][]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Image.Warp.TransformType, Single, System.Collections.Generic.IList`1[Microsoft.FaceSdk.Common.PointF], Microsoft.FaceSdk.Common.PointF[][]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 DefaultHorizontalStep : Public, Static, InitOnly
+    Int32 DefaultVerticalStep : Public, Static, InitOnly
+  Properties:
+    Int32 HorizontalStep 'get set' : 
+    Int32 VerticalStep 'get set' : 
+    Microsoft.FaceSdk.Image.Warp.PCoeff[][] PCoefficient 'get ' : 
+  Methods:
+    Initialize(TransformType, Single, IList`1, PointF[][]): PrivateScope, Public, HideBySig
+    InvTransformResampled(IList`1, IList`1, Image`1, Image`1, Rectangle): PrivateScope, Public, HideBySig
+    InvTransformResampled(IList`1, Image`1, Image`1, Rectangle): PrivateScope, Public, HideBySig
+    get_HorizontalStep(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorizontalStep(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalStep(): PrivateScope, Public, HideBySig, SpecialName
+    set_VerticalStep(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_PCoefficient(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Image.Warp.Resample`1[T]: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Type parameter: T, System.ValueType,  NotNullableValueType DefaultConstructor
+  Methods:
+    ResampleGen(Ptr`1, ScanlinePtr`1, Int32, ScanlinePtr`1, Int32): PrivateScope, Public, Static, HideBySig
+    ResampleIntervals(Ptr`1, Ptr`1, Int32, Ptr`1, Int32, Int32): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Image.Watershed: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetConnectedComponents(Image`1, Image`1, Image`1, Boolean): PrivateScope, Public, Static, HideBySig
+Struct Microsoft.FaceSdk.Image.YuvOrder: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Image.YuvOrder Y = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.YuvOrder U = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Image.YuvOrder V = 2 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.Image.YuvColor: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Image.YuvColor]
+  Fields:
+    Microsoft.FaceSdk.Image.YuvColor Empty : Public, Static, InitOnly
+  Properties:
+    Byte Y     'get set' : 
+    Byte U     'get set' : 
+    Byte V     'get set' : 
+  Methods:
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_U(): PrivateScope, Public, HideBySig, SpecialName
+    set_U(Byte): PrivateScope, Public, HideBySig, SpecialName
+    get_V(): PrivateScope, Public, HideBySig, SpecialName
+    set_V(Byte): PrivateScope, Public, HideBySig, SpecialName
+    FromArgb(Color): PrivateScope, Public, Static, HideBySig
+    ToArgb(): PrivateScope, Public, HideBySig
+    Equals(YuvColor): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(YuvColor, YuvColor): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(YuvColor, YuvColor): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Math.D2RTSTransform: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetTrans2DRTSMatrix(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    GetTrans2DRTSMatrix(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    GetResampleTrans2DRTSMatrix(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    ApplyToSelf(Transform4x4, IList`1): PrivateScope, Public, Static, HideBySig
+    ApplyToSelf(Transform4x4, IList`1): PrivateScope, Public, Static, HideBySig
+    Apply(Transform4x4, Shape): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.Geometry3D: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    MatrixRotationX(Single): PrivateScope, Public, Static, HideBySig
+    MatrixRotationY(Single): PrivateScope, Public, Static, HideBySig
+    MatrixRotationZ(Single): PrivateScope, Public, Static, HideBySig
+    EularAngle(Double, Double): PrivateScope, Public, Static, HideBySig
+    EulerVector2RotationMatrix(Vector3D, IList`1): PrivateScope, Public, Static, HideBySig
+    EulerVector2RotationMatrix(Vector3D): PrivateScope, Public, Static, HideBySig
+    RotationMatrix2EulerVector(IList`1): PrivateScope, Public, Static, HideBySig
+    RotationMatrix2EulerVector(TMatrix`1): PrivateScope, Public, Static, HideBySig
+    MultiplyMatrix3(Ptr`1, Ptr`1, Ptr`1): PrivateScope, Public, Static, HideBySig
+    MultiplyMatrix3(IList`1, IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    InvertMatrix3(Ptr`1, Ptr`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.Algebra`1[T]: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Type parameter: T, System.ValueType,  NotNullableValueType DefaultConstructor
+  Methods:
+    DotProduct(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    Distance(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    Sin(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    Cos(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.BezierCurveFlattener: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    FlattenCurve(IList`1, Double): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.CubicBezier: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Math.CubicBezier): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    System.Collections.Generic.IList`1[Microsoft.FaceSdk.Common.PointF] PreCalcPoints 'get ' : 
+    System.Collections.Generic.IList`1[Microsoft.FaceSdk.Common.PointF] ControlPoints 'get ' : 
+  Methods:
+    ComputeCurveLength(Single): PrivateScope, Public, HideBySig
+    Sample(Int32, Single[]&(Out), PointF[]&(Out)): PrivateScope, Public, HideBySig
+    Sample(IList`1): PrivateScope, Public, HideBySig
+    IsXWithinSegment(Single): PrivateScope, Public, HideBySig
+    PX(Single): PrivateScope, Public, HideBySig
+    P(Single): PrivateScope, Public, HideBySig
+    DP(Single): PrivateScope, Public, HideBySig
+    DDP(Single): PrivateScope, Public, HideBySig
+    R(Single): PrivateScope, Public, HideBySig
+    Normal(Single): PrivateScope, Public, HideBySig
+    SetControlPoint(Int32, PointF): PrivateScope, Public, HideBySig
+    SetControlPoint(Int32, PointF, Boolean): PrivateScope, Public, HideBySig
+    PreCalculate(): PrivateScope, Public, HideBySig
+    DistanceTo(PointF): PrivateScope, Public, HideBySig
+    get_PreCalcPoints(): PrivateScope, Public, HideBySig, SpecialName
+    get_ControlPoints(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Math.CubicBezierSpline: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.Vector`1[Microsoft.FaceSdk.Math.CubicBezier]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Create(IList`1): PrivateScope, Public, Static, HideBySig
+    CreateCatmullRomSpline(IList`1): PrivateScope, Public, Static, HideBySig
+    CreateCatmullRomSpline(IList`1, Boolean): PrivateScope, Public, Static, HideBySig
+    ReconstructSpline(Int32): PrivateScope, Public, HideBySig
+    Resample(Int32): PrivateScope, Public, HideBySig
+    Resample(IList`1, Int32, Int32): PrivateScope, Public, HideBySig
+    Resample(IList`1, Int32, Int32, IList`1, Int32): PrivateScope, Public, HideBySig
+    P(Single): PrivateScope, Public, HideBySig
+    ComputeCurveLength(Single): PrivateScope, Public, HideBySig
+    GetNearestPointOnCurve(PointF, PointF&(Out), Int32&(Out), Single&(Out)): PrivateScope, Public, HideBySig
+    GetNearestPointOnCurve(PointF, PointF&(Out), Int32&(Out)): PrivateScope, Public, HideBySig
+    GetNearestPointOnCurve(PointF, PointF&(Out), Int32&(Out), Boolean&(Out)): PrivateScope, Public, HideBySig
+    GetNearestSegmentOnCurve(PointF, Int32&(Out)): PrivateScope, Public, HideBySig
+    GetControlPoints(): PrivateScope, Public, HideBySig
+    GetKeyPoints(): PrivateScope, Public, HideBySig
+Class Microsoft.FaceSdk.Math.GaussianDistribution: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(System.Collections.Generic.IList`1[Microsoft.FaceSdk.Math.Generic.TVector`1[System.Single]], Microsoft.FaceSdk.Math.Generic.TVector`1[System.Single]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.FaceSdk.Math.Generic.TVector`1[System.Single] U 'get ' : 
+  Methods:
+    get_U(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Math.MultiGaussian: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.FaceSdk.Math.GaussianDistribution[] Gaussians 'get ' : 
+    Single[] Weights 'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    get_Gaussians(): PrivateScope, Public, HideBySig, SpecialName
+    get_Weights(): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+Interface Microsoft.FaceSdk.Math.Generic.IArithmetic`2[TOperand,TResult]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: TOperand, System.ValueType,  NotNullableValueType DefaultConstructor
+  Type parameter: TResult, System.ValueType,  NotNullableValueType DefaultConstructor
+  Methods:
+    Add(TOperand, TOperand): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Subtract(TOperand, TOperand): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Multiply(TOperand, TOperand): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Divide(TOperand, TOperand): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Sqrt(TOperand): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Square(TOperand): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Abs(TOperand): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Compare(TOperand, TOperand): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Microsoft.FaceSdk.Math.Generic.ByteArithmetic: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IArithmetic`2[System.Byte,System.Byte]
+Class Microsoft.FaceSdk.Math.Generic.ByteToIntArithmetic: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IArithmetic`2[System.Byte,System.Int32]
+Class Microsoft.FaceSdk.Math.Generic.IntegerArithmetic: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IArithmetic`2[System.Int32,System.Int32]
+Class Microsoft.FaceSdk.Math.Generic.FloatArithmetic: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IArithmetic`2[System.Single,System.Single]
+Class Microsoft.FaceSdk.Math.Generic.DoubleArithmetic: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IArithmetic`2[System.Double,System.Double]
+Class Microsoft.FaceSdk.Math.Generic.FloatToDoubleArithmetic: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IArithmetic`2[System.Single,System.Double]
+Class Microsoft.FaceSdk.Math.Generic.IntegerToByteArithmetic: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IArithmetic`2[System.Int32,System.Byte]
+Class Microsoft.FaceSdk.Math.Generic.Arithmetics: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    Microsoft.FaceSdk.Math.Generic.ByteArithmetic Byte 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.ByteToIntArithmetic Byte2Int 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.IntegerArithmetic Int 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.FloatArithmetic Float 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.DoubleArithmetic Double 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.IntegerToByteArithmetic Int2Byte 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.FloatToDoubleArithmetic Float2Double 'get ' : 
+  Methods:
+    get_Byte(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Byte2Int(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Int(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Float(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Double(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Int2Byte(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Float2Double(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Instance(): PrivateScope, Public, Static, HideBySig
+Interface Microsoft.FaceSdk.Math.Generic.IConverter`2[T1,T2]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: T1, System.ValueType,  NotNullableValueType DefaultConstructor
+  Type parameter: T2, System.ValueType,  NotNullableValueType DefaultConstructor
+  Methods:
+    From(T1): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface Microsoft.FaceSdk.Math.Generic.IValue`1[T]: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Type parameter: T, System.ValueType,  NotNullableValueType DefaultConstructor
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Byte,T]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int16,T]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int32,T]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int64,T]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Single,T]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Double,T]
+  Properties:
+    T MinValue 'get ' : 
+    T MaxValue 'get ' : 
+  Methods:
+    Compare(T, T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_MinValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxValue(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ToInt(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ToDouble(T): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Microsoft.FaceSdk.Math.Generic.TMatrix`1[T]: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  Type parameter: T, System.ValueType,  NotNullableValueType DefaultConstructor
+  :Microsoft.FaceSdk.Common.Array`1[T]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(T[], Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Math.Generic.TMatrix`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Boolean IsSquare 'get ' : 
+    Int32 Row  'get set' : 
+    Int32 Column 'get set' : 
+    T Item [Int32, Int32] 'get set' : 
+  Methods:
+    get_IsSquare(): PrivateScope, Public, HideBySig, SpecialName
+    get_Row(): PrivateScope, Public, HideBySig, SpecialName
+    get_Column(): PrivateScope, Public, HideBySig, SpecialName
+    get_Item(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, Int32, T): PrivateScope, Public, HideBySig, SpecialName
+    Clone(): PrivateScope, Public, HideBySig
+    Resize(Int32, Int32): PrivateScope, Public, HideBySig
+    Clear(): PrivateScope, Public, HideBySig
+    GetValue(Int32, Int32): PrivateScope, Public, HideBySig
+    SetValue(Int32, Int32, T): PrivateScope, Public, HideBySig
+    SetRow(Int32, IList`1): PrivateScope, Public, HideBySig
+    GetRowPtr(Int32): PrivateScope, Public, HideBySig
+    Crop(Rectangle): PrivateScope, Public, HideBySig
+    Crop(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    CopyTo(Int32, Int32, TMatrix`1, Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    Transpose(): PrivateScope, Public, HideBySig
+    SelfTranspose(): PrivateScope, Public, HideBySig
+    RowDot(Int32, TVector`1): PrivateScope, Public, HideBySig
+    Multiply(T): PrivateScope, Public, HideBySig
+    Multiply(Vertex3D): PrivateScope, Public, HideBySig
+    Multiply(Vector3D): PrivateScope, Public, HideBySig
+    RightMultiply(Vector3D): PrivateScope, Public, HideBySig
+    Subtract(TMatrix`1): PrivateScope, Public, HideBySig
+    Add(TMatrix`1): PrivateScope, Public, HideBySig
+    Invert(): PrivateScope, Public, HideBySig
+    ComputeSquareOfL2Norm(): PrivateScope, Public, HideBySig
+    Multiply(TMatrix`1, IList`1, TVector`1): PrivateScope, Public, Static, HideBySig
+    Multiply(IList`1, TMatrix`1, TVector`1): PrivateScope, Public, Static, HideBySig
+    Multiply(TMatrix`1, TMatrix`1, TMatrix`1): PrivateScope, Public, Static, HideBySig
+    MultiplyTransposed(TMatrix`1, TMatrix`1, TMatrix`1): PrivateScope, Public, Static, HideBySig
+    Multiply(TMatrix`1, IList`1): PrivateScope, Public, Static, HideBySig
+    Multiply(IList`1, TMatrix`1): PrivateScope, Public, Static, HideBySig
+    Multiply(TMatrix`1, TMatrix`1): PrivateScope, Public, Static, HideBySig
+    MultiplyTransposed(TMatrix`1, TMatrix`1): PrivateScope, Public, Static, HideBySig
+    Invert(TMatrix`1): PrivateScope, Public, Static, HideBySig
+    op_Multiply(TMatrix`1, TVector`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(TVector`1, TMatrix`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(TMatrix`1, IList`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(TMatrix`1, TMatrix`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(TMatrix`1, T): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(TMatrix`1, Vertex3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(TMatrix`1, Vector3D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(Vector3D, TMatrix`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(TMatrix`1, TMatrix`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Addition(TMatrix`1, TMatrix`1): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Math.Generic.TVector`1[T]: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+  Type parameter: T, System.ValueType,  NotNullableValueType DefaultConstructor
+  :Microsoft.FaceSdk.Common.Array`1[T]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[T]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(T[], Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Clone(): PrivateScope, Public, HideBySig
+    Multiply(T): PrivateScope, Public, HideBySig
+    Subtract(TVector`1): PrivateScope, Public, HideBySig
+    Add(TVector`1): PrivateScope, Public, HideBySig
+    ElementWiseMultiply(TVector`1): PrivateScope, Public, HideBySig
+    CrossProduct(TVector`1, TVector`1, TMatrix`1): PrivateScope, Public, Static, HideBySig
+    Multiply(TVector`1): PrivateScope, Public, HideBySig
+    Divide(TVector`1): PrivateScope, Public, HideBySig
+    DotProduct(IList`1): PrivateScope, Public, HideBySig
+    Distance(IList`1): PrivateScope, Public, HideBySig
+    Sin(IList`1): PrivateScope, Public, HideBySig
+    Cos(IList`1): PrivateScope, Public, HideBySig
+    ComputeSquareOfL2Norm(): PrivateScope, Public, HideBySig
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    op_Addition(TVector`1, TVector`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Subtraction(TVector`1, TVector`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(TVector`1, TVector`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(TVector`1, TVector`1): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Multiply(TVector`1, T): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Division(TVector`1, T): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Math.Generic.ByteValue: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IValue`1[System.Byte]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Byte,System.Byte]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int16,System.Byte]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int32,System.Byte]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int64,System.Byte]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Single,System.Byte]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Double,System.Byte]
+  Properties:
+    Byte MinValue 'get ' : 
+    Byte MaxValue 'get ' : 
+  Methods:
+    get_MinValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Compare(Byte, Byte): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Byte): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int16): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Single): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToInt(Byte): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToDouble(Byte): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Math.Generic.ShortValue: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IValue`1[System.Int16]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Byte,System.Int16]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int16,System.Int16]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int32,System.Int16]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int64,System.Int16]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Single,System.Int16]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Double,System.Int16]
+  Properties:
+    Int16 MinValue 'get ' : 
+    Int16 MaxValue 'get ' : 
+  Methods:
+    get_MinValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Compare(Int16, Int16): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Byte): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int16): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Single): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToInt(Int16): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToDouble(Int16): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Math.Generic.IntValue: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IValue`1[System.Int32]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Byte,System.Int32]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int16,System.Int32]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int32,System.Int32]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int64,System.Int32]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Single,System.Int32]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Double,System.Int32]
+  Properties:
+    Int32 MinValue 'get ' : 
+    Int32 MaxValue 'get ' : 
+  Methods:
+    get_MinValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Compare(Int32, Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Byte): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int16): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Single): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToInt(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToDouble(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Math.Generic.LongValue: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IValue`1[System.Int64]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Byte,System.Int64]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int16,System.Int64]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int32,System.Int64]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int64,System.Int64]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Single,System.Int64]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Double,System.Int64]
+  Properties:
+    Int64 MinValue 'get ' : 
+    Int64 MaxValue 'get ' : 
+  Methods:
+    get_MinValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Compare(Int64, Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Byte): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int16): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Single): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToInt(Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToDouble(Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Math.Generic.FloatValue: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IValue`1[System.Single]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Byte,System.Single]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int16,System.Single]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int32,System.Single]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int64,System.Single]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Single,System.Single]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Double,System.Single]
+  Properties:
+    Single MinValue 'get ' : 
+    Single MaxValue 'get ' : 
+  Methods:
+    get_MinValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Compare(Single, Single): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Byte): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int16): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Single): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToInt(Single): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToDouble(Single): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Math.Generic.DoubleValue: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Math.Generic.IValue`1[System.Double]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Byte,System.Double]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int16,System.Double]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int32,System.Double]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Int64,System.Double]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Single,System.Double]
+    Microsoft.FaceSdk.Math.Generic.IConverter`2[System.Double,System.Double]
+  Properties:
+    Double MinValue 'get ' : 
+    Double MaxValue 'get ' : 
+  Methods:
+    get_MinValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxValue(): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Compare(Double, Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Byte): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int16): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int32): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Int64): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Single): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    From(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToInt(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    ToDouble(Double): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Math.Generic.Values: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Properties:
+    Microsoft.FaceSdk.Math.Generic.ByteValue Byte 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.ShortValue Short 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.IntValue Int 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.LongValue Long 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.FloatValue Float 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.DoubleValue Double 'get ' : 
+  Methods:
+    get_Byte(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Short(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Int(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Long(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Float(): PrivateScope, Public, Static, HideBySig, SpecialName
+    get_Double(): PrivateScope, Public, Static, HideBySig, SpecialName
+    Instance(): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.GeometryTransform: AutoLayout, AnsiClass, Class, Public, Abstract, BeforeFieldInit
+  Methods:
+    Transform(PointF): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InvertTransform(PointF): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Transform(Shape): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InvertTransform(Shape): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class Microsoft.FaceSdk.Math.GeometryThinSplineTransform: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :Microsoft.FaceSdk.Math.GeometryTransform
+    Void .ctor(System.Collections.Generic.IList`1[Microsoft.FaceSdk.Common.PointF], System.Collections.Generic.IList`1[Microsoft.FaceSdk.Common.PointF]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Transform(PointF): PrivateScope, Public, Virtual, HideBySig
+    InvertTransform(PointF): PrivateScope, Public, Virtual, HideBySig
+    Transform(Shape): PrivateScope, Public, Virtual, HideBySig
+    InvertTransform(Shape): PrivateScope, Public, Virtual, HideBySig
+Struct Microsoft.FaceSdk.Math.KDTree.KdSplitPattern: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Math.KDTree.KdSplitPattern Standard = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Math.KDTree.KdSplitPattern MiddlePoint = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Math.KDTree.KdSplitPattern Fair = 2 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Math.KDTree.KdSplitPattern SlidingMiddlePoint = 3 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Math.KDTree.KdSplitPattern SlidingFair = 4 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.Math.KDTree.KdTree`2[KdCoordinate,KdDistance]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: KdCoordinate, System.ValueType,  NotNullableValueType DefaultConstructor
+  Type parameter: KdDistance, System.ValueType,  NotNullableValueType DefaultConstructor
+    Void .ctor(System.Collections.Generic.IList`1[KdCoordinate][], Int64, Microsoft.FaceSdk.Math.KDTree.KdSplitPattern): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IList`1[System.Collections.Generic.IList`1[KdCoordinate]], Int64, Microsoft.FaceSdk.Math.KDTree.KdSplitPattern): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int64 BucketSize 'get ' : 
+    Int64 Count 'get ' : 
+  Methods:
+    AnnSearch(IList`1, Int64, Double): PrivateScope, Public, HideBySig
+    AnnSearch(IList`1, Double, IList`1, IList`1): PrivateScope, Public, HideBySig
+    get_BucketSize(): PrivateScope, Public, HideBySig, SpecialName
+    get_Count(): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Math.Kmeans`1[T]: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  Type parameter: T, System.ValueType,  NotNullableValueType DefaultConstructor
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Int32[] Labels 'get ' : 
+  Methods:
+    get_Labels(): PrivateScope, Public, HideBySig, SpecialName
+    Init(T[][], Int32, Int32, Int32): PrivateScope, Public, HideBySig
+    Run(Int32, T[], T[]): PrivateScope, Public, HideBySig
+    Run(Int32, T[]): PrivateScope, Public, HideBySig
+    ResizeLabel(Int32): PrivateScope, Public, HideBySig
+Struct Microsoft.FaceSdk.Math.SolveResult: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.Math.SolveResult Pending = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Math.SolveResult Solved = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.Math.SolveResult IllConditioned = 2 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.Math.LinearSolver: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.DisposeModel
+    Void .ctor(Boolean, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Solve(TMatrix`1, TVector`1, TVector`1): PrivateScope, Public, HideBySig
+    CheckResult(UInt32): PrivateScope, Public, HideBySig
+Class Microsoft.FaceSdk.Math.Lud: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Double Determinant 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.TMatrix`1[System.Double] L 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.TMatrix`1[System.Double] U 'get ' : 
+  Methods:
+    Decompose(TMatrix`1): PrivateScope, Public, HideBySig
+    SetLU(): PrivateScope, Public, HideBySig
+    GetInverse(TMatrix`1): PrivateScope, Public, HideBySig
+    get_Determinant(): PrivateScope, Public, HideBySig, SpecialName
+    get_L(): PrivateScope, Public, HideBySig, SpecialName
+    get_U(): PrivateScope, Public, HideBySig, SpecialName
+    MatrixSelfInvert(TMatrix`1): PrivateScope, Public, Static, HideBySig
+    MatrixInvert(TMatrix`1): PrivateScope, Public, Static, HideBySig
+    MatrixDeterminant(TMatrix`1): PrivateScope, Public, Static, HideBySig
+    ludcmp(Int32, TMatrix`1, Int32[]): PrivateScope, Public, Static, HideBySig
+    lubksb(Int32, TMatrix`1, Int32[], Double[]): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.Matrix: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.FaceSdk.Math.Generic.TMatrix`1[System.Single]
+    Void .ctor(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single[], Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Math.Matrix): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.BinaryReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Methods:
+    Clone(): PrivateScope, Public, HideBySig
+    RowDot(Int32, IList`1): PrivateScope, Public, HideBySig
+    Transpose(): PrivateScope, Public, HideBySig
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Class Microsoft.FaceSdk.Math.MatrixSolver: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GaussJordanSolveDMatrix(TMatrix`1): PrivateScope, Public, Static, HideBySig
+    SolveSvd(TMatrix`1, TVector`1): PrivateScope, Public, Static, HideBySig
+    LeastSquares(TMatrix`1, TVector`1): PrivateScope, Public, Static, HideBySig
+    LeastSquares(TMatrix`1, TVector`1): PrivateScope, Public, Static, HideBySig
+    SolveGECP(TMatrix`1, TVector`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.NumberTheory: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Gcd(UInt32, UInt32): PrivateScope, Public, Static, HideBySig
+    Gcd(IList`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.PolynomialEquationSolver: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    SolveQuadraticEquation(IList`1): PrivateScope, Public, Static, HideBySig
+    SolveQuadraticEquationRealRoot(IList`1): PrivateScope, Public, Static, HideBySig
+    SolveCubicEquationRealRoot(IList`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.Random: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    SetSeed(Int32): PrivateScope, Public, HideBySig
+    Uniform(): PrivateScope, Public, HideBySig
+    Gaussian(): PrivateScope, Public, HideBySig
+    Cauchy(): PrivateScope, Public, HideBySig
+    ResamplingFromCumulativeDistribution(IList`1): PrivateScope, Public, HideBySig
+Struct Microsoft.FaceSdk.Math.ResamplePoint2D: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, BeforeFieldInit
+  :System.ValueType
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.Math.ResamplePoint2D]
+  Properties:
+    Single X   'get set' : 
+    Single Y   'get set' : 
+    Int32 SegmentIndex 'get set' : 
+    Single SegmentT 'get set' : 
+    Microsoft.FaceSdk.Common.PointF Normal 'get set' : 
+    Microsoft.FaceSdk.Common.PointF Distance 'get set' : 
+  Methods:
+    DistanceTo(ResamplePoint2D): PrivateScope, Public, HideBySig
+    get_X(): PrivateScope, Public, HideBySig, SpecialName
+    set_X(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Y(): PrivateScope, Public, HideBySig, SpecialName
+    set_Y(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_SegmentIndex(): PrivateScope, Public, HideBySig, SpecialName
+    set_SegmentIndex(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_SegmentT(): PrivateScope, Public, HideBySig, SpecialName
+    set_SegmentT(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_Normal(): PrivateScope, Public, HideBySig, SpecialName
+    set_Normal(PointF): PrivateScope, Public, HideBySig, SpecialName
+    get_Distance(): PrivateScope, Public, HideBySig, SpecialName
+    set_Distance(PointF): PrivateScope, Public, HideBySig, SpecialName
+    Equals(ResamplePoint2D): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    GetHashCode(): PrivateScope, Public, Virtual, HideBySig
+    op_Equality(ResamplePoint2D, ResamplePoint2D): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(ResamplePoint2D, ResamplePoint2D): PrivateScope, Public, Static, HideBySig, SpecialName
+Class Microsoft.FaceSdk.Math.Statistics: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    GetMean(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    GetVariance(IEnumerable`1): PrivateScope, Public, Static, HideBySig
+    GetAverageL1Distance(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+    CalculateCorrelation(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.Svd: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.FaceSdk.Math.Generic.TMatrix`1[System.Double] U 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.TVector`1[System.Double] W 'get ' : 
+    Microsoft.FaceSdk.Math.Generic.TMatrix`1[System.Double] V 'get ' : 
+  Methods:
+    get_U(): PrivateScope, Public, HideBySig, SpecialName
+    get_W(): PrivateScope, Public, HideBySig, SpecialName
+    get_V(): PrivateScope, Public, HideBySig, SpecialName
+    Decompose(TMatrix`1): PrivateScope, Public, HideBySig
+    Compose(): PrivateScope, Public, HideBySig
+    TransposedCompose(): PrivateScope, Public, HideBySig
+    Decompose(Int32, Int32, TMatrix`1, IList`1, TMatrix`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.Transform4x4: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Single Item [Int32, Int32] 'get set' : 
+  Methods:
+    get_Item(Int32, Int32): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(Int32, Int32, Single): PrivateScope, Public, HideBySig, SpecialName
+    GetElement(Int32, Int32): PrivateScope, Public, HideBySig
+    SetElement(Int32, Int32, Single): PrivateScope, Public, HideBySig
+    Apply(Single, Single, Single&(Out), Single&(Out)): PrivateScope, Public, HideBySig (Obsolete)
+    Apply(PointF): PrivateScope, Public, HideBySig
+    Apply(Point): PrivateScope, Public, HideBySig
+    Apply(Single, Single): PrivateScope, Public, HideBySig
+    Clone(): PrivateScope, Public, HideBySig
+    Normalize(): PrivateScope, Public, HideBySig
+Class Microsoft.FaceSdk.Math.UniformSampling: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    Resample(CubicBezierSpline, Int32, ContourType): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.Math.VectorF: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.FaceSdk.Math.Generic.TVector`1[System.Single]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.Collections.Generic.IEnumerable`1[System.Single]): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Single[], Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(System.IO.BinaryReader): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Methods:
+    Clone(): PrivateScope, Public, HideBySig
+    Normalize(): PrivateScope, Public, HideBySig
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct Microsoft.FaceSdk.VideoSensor.ImageResolution: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.VideoSensor.ImageResolution Invalid = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.ImageResolution Resolution80x60 = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.ImageResolution Resolution320x240 = 2 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.ImageResolution Resolution640x480 = 3 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.ImageResolution Resolution1280x1024 = 4 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.VideoSensor.ImageDigitalZoom: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.VideoSensor.ImageDigitalZoom Zoom1x = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.ImageDigitalZoom Zoom2x = 1 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.VideoSensor.ImageViewArea: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Properties:
+    Microsoft.FaceSdk.VideoSensor.ImageDigitalZoom Zoom 'get set' : 
+    Int32 CenterX 'get set' : 
+    Int32 CenterY 'get set' : 
+  Methods:
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zoom(ImageDigitalZoom): PrivateScope, Public, HideBySig, SpecialName
+    get_CenterX(): PrivateScope, Public, HideBySig, SpecialName
+    set_CenterX(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_CenterY(): PrivateScope, Public, HideBySig, SpecialName
+    set_CenterY(Int32): PrivateScope, Public, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.VideoSensor.ZoomConfig: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+  Interfaces:
+    System.IEquatable`1[Microsoft.FaceSdk.VideoSensor.ZoomConfig]
+  Properties:
+    Single Zoom 'get set' : 
+    Int32 ViewAreaLeft 'get set' : 
+    Int32 ViewAreaTop 'get set' : 
+  Methods:
+    get_Zoom(): PrivateScope, Public, HideBySig, SpecialName
+    set_Zoom(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewAreaLeft(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewAreaLeft(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewAreaTop(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewAreaTop(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+    Equals(ZoomConfig): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    op_Equality(ZoomConfig, ZoomConfig): PrivateScope, Public, Static, HideBySig, SpecialName
+    op_Inequality(ZoomConfig, ZoomConfig): PrivateScope, Public, Static, HideBySig, SpecialName
+Struct Microsoft.FaceSdk.VideoSensor.CameraConfig: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+  Properties:
+    Int32 Width 'get set' : 
+    Int32 Height 'get set' : 
+    Single HorizontalFieldOfView 'get set' : 
+    Single VerticalFieldOfView 'get set' : 
+    Single FocalLength 'get set' : 
+  Methods:
+    get_Width(): PrivateScope, Public, HideBySig, SpecialName
+    set_Width(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Height(): PrivateScope, Public, HideBySig, SpecialName
+    set_Height(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_HorizontalFieldOfView(): PrivateScope, Public, HideBySig, SpecialName
+    set_HorizontalFieldOfView(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_VerticalFieldOfView(): PrivateScope, Public, HideBySig, SpecialName
+    set_VerticalFieldOfView(Single): PrivateScope, Public, HideBySig, SpecialName
+    get_FocalLength(): PrivateScope, Public, HideBySig, SpecialName
+    set_FocalLength(Single): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.VideoSensor.NuiConstants: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Fields:
+    Int32 WidthOfResolution320x240 : Public, Static, InitOnly
+    Int32 HeightOfResolution320x240 : Public, Static, InitOnly
+    Int32 WidthOfResolution640x480 : Public, Static, InitOnly
+    Int32 HeightOfResolution640x480 : Public, Static, InitOnly
+    Int32 NUI_SKELETON_COUNT : Public, Static, InitOnly
+    Int32 NUI_JOINT_COUNT : Public, Static, InitOnly
+    Single NUI_CAMERA_DEPTH_NOMINAL_FOCAL_LENGTH_IN_PIXELS = 285.63 : Public, Static, Literal, HasDefault
+    Single NUI_CAMERA_DEPTH_NOMINAL_INVERSE_FOCAL_LENGTH_IN_PIXELS = 0.003501 : Public, Static, Literal, HasDefault
+    Single NUI_CAMERA_DEPTH_NOMINAL_DIAGONAL_FOV = 70 : Public, Static, Literal, HasDefault
+    Single NUI_CAMERA_DEPTH_NOMINAL_HORIZONTAL_FOV = 58.5 : Public, Static, Literal, HasDefault
+    Single NUI_CAMERA_DEPTH_NOMINAL_VERTICAL_FOV = 45.6 : Public, Static, Literal, HasDefault
+    Single NUI_CAMERA_COLOR_NOMINAL_FOCAL_LENGTH_IN_PIXELS = 531.15 : Public, Static, Literal, HasDefault
+    Single NUI_CAMERA_COLOR_NOMINAL_INVERSE_FOCAL_LENGTH_IN_PIXELS = 0.00183 : Public, Static, Literal, HasDefault
+    Single NUI_CAMERA_COLOR_NOMINAL_DIAGONAL_FOV = 73.9 : Public, Static, Literal, HasDefault
+    Single NUI_CAMERA_COLOR_NOMINAL_HORIZONTAL_FOV = 62 : Public, Static, Literal, HasDefault
+    Single NUI_CAMERA_COLOR_NOMINAL_VERTICAL_FOV = 48.6 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.VideoSensor.ImageType: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.VideoSensor.ImageType DepthAndPlayerIndex = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.ImageType Color = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.ImageType ColorYuv = 2 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.ImageType ColorYuvRaw = 3 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.ImageType Depth = 4 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.VideoSensor.ImageFrame: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Properties:
+    System.DateTime TimeStamp 'get set' : 
+    Int32 FrameNumber 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.ImageType ImageType 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.ImageViewArea ViewArea 'get set' : 
+    Microsoft.FaceSdk.Image.Image`1[System.Byte] Image 'get set' : 
+  Methods:
+    Clone(): PrivateScope, Public, HideBySig
+    Copy(ImageFrame): PrivateScope, Public, HideBySig
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_TimeStamp(): PrivateScope, Public, HideBySig, SpecialName
+    set_TimeStamp(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_FrameNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_FrameNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_ImageType(): PrivateScope, Public, HideBySig, SpecialName
+    set_ImageType(ImageType): PrivateScope, Public, HideBySig, SpecialName
+    get_ViewArea(): PrivateScope, Public, HideBySig, SpecialName
+    set_ViewArea(ImageViewArea): PrivateScope, Public, HideBySig, SpecialName
+    get_Image(): PrivateScope, Public, HideBySig, SpecialName
+Interface Microsoft.FaceSdk.VideoSensor.INuiImageGetColorPixelCoordinatesFromDepthPixel: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Methods:
+    GetColorPixelCoordinatesFromDepthPixel(ImageResolution, ImageViewArea, Int32, Int32, Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct Microsoft.FaceSdk.VideoSensor.SkeletonQuality: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.VideoSensor.SkeletonQuality ClippedBottom = 8 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.SkeletonQuality ClippedLeft = 2 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.SkeletonQuality ClippedRight = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.SkeletonQuality ClippedTop = 4 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.VideoSensor.SkeletonTrackingState: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.VideoSensor.SkeletonTrackingState NotTracked = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.SkeletonTrackingState PositionOnly = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.SkeletonTrackingState Tracked = 2 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.VideoSensor.SkeletonData: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Properties:
+    Microsoft.FaceSdk.VideoSensor.JointsCollection Joints 'get set' : 
+    Microsoft.FaceSdk.Common.Vector3D Position 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.SkeletonQuality Quality 'get set' : 
+    Int32 TrackingID 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.SkeletonTrackingState TrackingState 'get set' : 
+    Int32 UserIndex 'get set' : 
+  Methods:
+    Copy(SkeletonData): PrivateScope, Public, HideBySig
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_Joints(): PrivateScope, Public, HideBySig, SpecialName
+    set_Joints(JointsCollection): PrivateScope, Public, HideBySig, SpecialName
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    set_Position(Vector3D): PrivateScope, Public, HideBySig, SpecialName
+    get_Quality(): PrivateScope, Public, HideBySig, SpecialName
+    set_Quality(SkeletonQuality): PrivateScope, Public, HideBySig, SpecialName
+    get_TrackingID(): PrivateScope, Public, HideBySig, SpecialName
+    set_TrackingID(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_TrackingState(): PrivateScope, Public, HideBySig, SpecialName
+    set_TrackingState(SkeletonTrackingState): PrivateScope, Public, HideBySig, SpecialName
+    get_UserIndex(): PrivateScope, Public, HideBySig, SpecialName
+    set_UserIndex(Int32): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.VideoSensor.JointsCollection: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :Microsoft.FaceSdk.Common.Array`1[Microsoft.FaceSdk.VideoSensor.Joint]
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Properties:
+    Microsoft.FaceSdk.VideoSensor.Joint Item [Microsoft.FaceSdk.VideoSensor.JointID] 'get set' : 
+  Methods:
+    get_Item(JointID): PrivateScope, Public, HideBySig, SpecialName
+    set_Item(JointID, Joint): PrivateScope, Public, HideBySig, SpecialName
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+Struct Microsoft.FaceSdk.VideoSensor.JointID: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.VideoSensor.JointID HipCenter = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID Spine = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID ShoulderCenter = 2 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID Head = 3 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID ShoulderLeft = 4 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID ElbowLeft = 5 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID WristLeft = 6 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID HandLeft = 7 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID ShoulderRight = 8 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID ElbowRight = 9 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID WristRight = 10 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID HandRight = 11 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID HipLeft = 12 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID KneeLeft = 13 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID AnkleLeft = 14 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID FootLeft = 15 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID HipRight = 16 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID KneeRight = 17 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID AnkleRight = 18 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointID FootRight = 19 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.VideoSensor.JointTrackingState: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.VideoSensor.JointTrackingState NotTracked = 0 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointTrackingState Inferred = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.JointTrackingState Tracked = 2 : Public, Static, Literal, HasDefault
+Struct Microsoft.FaceSdk.VideoSensor.Joint: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Sealed, Serializable, BeforeFieldInit
+  :System.ValueType
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+    System.IEquatable`1[Microsoft.FaceSdk.VideoSensor.Joint]
+  Properties:
+    Microsoft.FaceSdk.Common.Vector3D Position 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.JointID ID 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.JointTrackingState TrackingState 'get set' : 
+  Methods:
+    get_Position(): PrivateScope, Public, HideBySig, SpecialName
+    set_Position(Vector3D): PrivateScope, Public, HideBySig, SpecialName
+    get_ID(): PrivateScope, Public, HideBySig, SpecialName
+    set_ID(JointID): PrivateScope, Public, HideBySig, SpecialName
+    get_TrackingState(): PrivateScope, Public, HideBySig, SpecialName
+    set_TrackingState(JointTrackingState): PrivateScope, Public, HideBySig, SpecialName
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Joint): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Equals(Object): PrivateScope, Public, Virtual, HideBySig
+Struct Microsoft.FaceSdk.VideoSensor.SkeletonFrameQuality: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    Microsoft.FaceSdk.VideoSensor.SkeletonFrameQuality CameraMotion = 1 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.SkeletonFrameQuality ExtrapolatedFloor = 2 : Public, Static, Literal, HasDefault
+    Microsoft.FaceSdk.VideoSensor.SkeletonFrameQuality UpperBodySkeleton = 4 : Public, Static, Literal, HasDefault
+Class Microsoft.FaceSdk.VideoSensor.SkeletonFrame: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    Microsoft.FaceSdk.Common.IBinarySerializer
+  Properties:
+    System.DateTime TimeStamp 'get set' : 
+    Int32 FrameNumber 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.SkeletonFrameQuality Quality 'get set' : 
+    Microsoft.FaceSdk.Common.Vector3D FloorClipPlane 'get set' : 
+    Microsoft.FaceSdk.Common.Vector3D NormalToGravity 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.SkeletonData[] Skeletons 'get set' : 
+  Methods:
+    Copy(SkeletonFrame): PrivateScope, Public, HideBySig
+    Read(BinaryReader): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    Write(BinaryWriter): PrivateScope, Public, Final, Virtual, HideBySig, VtableLayoutMask
+    get_TimeStamp(): PrivateScope, Public, HideBySig, SpecialName
+    set_TimeStamp(DateTime): PrivateScope, Public, HideBySig, SpecialName
+    get_FrameNumber(): PrivateScope, Public, HideBySig, SpecialName
+    set_FrameNumber(Int32): PrivateScope, Public, HideBySig, SpecialName
+    get_Quality(): PrivateScope, Public, HideBySig, SpecialName
+    set_Quality(SkeletonFrameQuality): PrivateScope, Public, HideBySig, SpecialName
+    get_FloorClipPlane(): PrivateScope, Public, HideBySig, SpecialName
+    set_FloorClipPlane(Vector3D): PrivateScope, Public, HideBySig, SpecialName
+    get_NormalToGravity(): PrivateScope, Public, HideBySig, SpecialName
+    set_NormalToGravity(Vector3D): PrivateScope, Public, HideBySig, SpecialName
+    get_Skeletons(): PrivateScope, Public, HideBySig, SpecialName
+    set_Skeletons(SkeletonData[]): PrivateScope, Public, HideBySig, SpecialName
+Class Microsoft.FaceSdk.VideoSensor.NuiHelper: AutoLayout, AnsiClass, Class, Public, Abstract, Sealed, BeforeFieldInit
+  Methods:
+    ConvertZoomConfigToViewArea(ZoomConfig): PrivateScope, Public, Static, HideBySig
+    ConvertDepthImageToColorImage(IList`1, IList`1): PrivateScope, Public, Static, HideBySig
+Class Microsoft.FaceSdk.VideoSensor.SensorData: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(Microsoft.FaceSdk.Image.Image`1[System.Byte], Microsoft.FaceSdk.Image.Image`1[System.Byte], Microsoft.FaceSdk.Image.Image`1[System.UInt16], Microsoft.FaceSdk.VideoSensor.SkeletonFrame, Microsoft.FaceSdk.Image.Image`1[System.UInt16], Microsoft.FaceSdk.VideoSensor.ZoomConfig): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    Microsoft.FaceSdk.Image.Image`1[System.Byte] VideoFrame 'get set' : 
+    Microsoft.FaceSdk.Image.Image`1[System.Byte] GrayFrame 'get set' : 
+    Microsoft.FaceSdk.Image.Image`1[System.UInt16] DepthFrame 'get set' : 
+    Microsoft.FaceSdk.Image.Image`1[System.UInt16] DepthFrameInColorSpace 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.SkeletonFrame SkeletonFrame 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.ZoomConfig ZoomConfig 'get set' : 
+    Microsoft.FaceSdk.VideoSensor.INuiImageGetColorPixelCoordinatesFromDepthPixel NuiImageGetColorPixelCoordinatesFromDepthPixel 'get set' : 
+  Methods:
+    Copy(SensorData): PrivateScope, Public, HideBySig
+    get_VideoFrame(): PrivateScope, Public, HideBySig, SpecialName
+    set_VideoFrame(Image`1): PrivateScope, Public, HideBySig, SpecialName
+    get_GrayFrame(): PrivateScope, Public, HideBySig, SpecialName
+    set_GrayFrame(Image`1): PrivateScope, Public, HideBySig, SpecialName
+    get_DepthFrame(): PrivateScope, Public, HideBySig, SpecialName
+    set_DepthFrame(Image`1): PrivateScope, Public, HideBySig, SpecialName
+    get_DepthFrameInColorSpace(): PrivateScope, Public, HideBySig, SpecialName
+    set_DepthFrameInColorSpace(Image`1): PrivateScope, Public, HideBySig, SpecialName
+    get_SkeletonFrame(): PrivateScope, Public, HideBySig, SpecialName
+    set_SkeletonFrame(SkeletonFrame): PrivateScope, Public, HideBySig, SpecialName
+    get_ZoomConfig(): PrivateScope, Public, HideBySig, SpecialName
+    set_ZoomConfig(ZoomConfig): PrivateScope, Public, HideBySig, SpecialName
+    get_NuiImageGetColorPixelCoordinatesFromDepthPixel(): PrivateScope, Public, HideBySig, SpecialName
+    set_NuiImageGetColorPixelCoordinatesFromDepthPixel(INuiImageGetColorPixelCoordinatesFromDepthPixel): PrivateScope, Public, HideBySig, SpecialName
